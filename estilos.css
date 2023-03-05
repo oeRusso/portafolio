@@ -455,6 +455,11 @@
   filter: grayscale(0);
 }
 
+#portafolio .fila .proyectos a{
+  text-decoration: none;
+  color: white;
+}
+
 #portafolio .fila .proyectos .info{
   position: absolute;
   left: 0;
