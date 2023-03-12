@@ -19,7 +19,7 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <!-- <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li> -->
                             <li><a href="#portafolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
@@ -40,8 +40,8 @@
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Esteban Russo</span>, Desarrollador Backend</h2>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad eveniet numquam rem, saepe consectetur expedita et enim exercitationem tempora dicta.</p>
-                <a href="portafolio">Ir a portafolio</a>
+                <!-- <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad eveniet numquam rem, saepe consectetur expedita et enim exercitationem tempora dicta.</p> -->
+                <a href="#portafolio">Ir a portafolio</a>
             </div>
         </div>
     </section>
@@ -55,10 +55,10 @@
             <p class="titulo-seccion">Sobre mi</p>
             <h2>Hola soy <span>Esteban Russo</span></h2>
             <h3>Desarrollador web</h3>
-            <p> Hola soy Esteban, Me recibi de la tecnicatura de analista en sistemas y estoy en proceso de curso la ingenieria de software. 
-                He destinado gran parte de mi tiempo a especializarme en las tecnologias de backend como PHP-LARAVEL y SQL , asi como tambien a dominar Javascript, html y css, Y como adicional tengo conocimientos en Bootstrap y Wordpress.
-                Tambien he notado una suma importancia en el aprendizaje de ingles para el rubro al que apunto y estoy tomando la membresia anual en Open English, Mi nivel actual es A2 pero conforme pase el tiempo mi nivel avanzara.</p>
-            <a href="PDF/curriculum-developer.pdf" target="_blank" download="Curriculum-Russo">Descargar CV</a>
+            <p> Me recibi de la tecnicatura de analista en sistemas y estoy en proceso de curso la ingenieria de software. Actualemente desarrollo APIS del lado del servidor utilizando tecnologías que entreguen un buen performance y comodidad como Laravel y PHP, estoy listo para dar mi siguiente paso y asumir retos y desafíos en el siguiente nivel.
+                Aunque mi experiencia es corta, mi pasión por aprender, flexibilidad y lógica me han llevado a sacar adelante proyectos , apoyándome siempre en la comunicación asertiva, resolución de conflictos y mis colegas developers.
+                Pueden contactarme atravez de mi correo electronico oerusso28@gmail.com</p>
+            <a href="PDF/curriculum-desarrollador.pdf" target="_blank" download="Curriculum-Russo">Descargar CV</a>
         </div>
     </section>
 
@@ -230,10 +230,10 @@
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
+                <img src="img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
-                    <h4>Descripcion del proyecto</h4>
-                    <p>Diseño web</p>
+                    <h4>LARAVEL</h4>
+                    <p>Simulacion de un instagram</p>
                 </div>
             </div>
 
@@ -249,19 +249,19 @@
         <div class="fila">
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
+                <img src="img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
-                    <h4>Descripcion del proyecto</h4>
-                    <p>Diseño web</p>
+                    <h4>JAVASCRIPT</h4>
+                    <p>E-Commerce</p>
                 </div>
             </div>
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
+                <img src="img/img-proyecto-blackjack.jpg" alt="">
                 <div class="info">
-                    <h4>Descripcion del proyecto</h4>
-                    <p>Diseño web</p>
+                    <h4> <a href="proyectos/BLACKJACK/index.html" target="_blank">Juego de Blackjack</a></h4>
+                    <p>JAVASCRIPT</p>
                 </div>
             </div>
 
@@ -282,14 +282,14 @@
         <div class="contenedor-form">
             <form action="">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de email" class="input-mitad">
+                    <input name="nombre" type="text" placeholder="Nombre completo" class="input-mitad">
+                    <input name="email" type="email" placeholder="Direccion de email" class="input-mitad">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input name="tema" type="text" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
                 </div>
 
                 <input type="submit" value="Enviar mensaje" class="btn-enviar">
@@ -297,13 +297,18 @@
         </div>
     </section>
 
+<!-- TODO: BUENO ACA FALTA INSTALAR EL COMPOSER EN ESTE PROYECTO Y DESARROLAR EL BACKEND PARA RECIBIR LOS DATOS DEL FORMULARIO -->
+
+
+
+
     <!-- SECCION FOOTER -->
     <footer>
         <p>Todos los derechos reservados - 2023</p>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/esteban-russo-010609203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/oeRusso" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
