@@ -1,3 +1,23 @@
+<?php
+    
+    require_once './contacto.php';
+    require_once './db.php';
+
+    if (count($_POST) > 0) {
+        $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : 'nombre de prueba';
+        $email = isset($_POST['email']) ? $_POST['email'] : 'email de prueba';
+        $tema = isset($_POST['tema']) ? $_POST['tema'] : '...';
+        $mensaje = isset($_POST['mensaje']) ? $_POST['mensaje'] : '...';
+
+        $profesores = new Contacto($nombre, $email, $tema, $mensaje);
+
+        
+        $profesores->save();
+    
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +25,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <title>ER-Portafolio</title>
 </head>
 <body>
@@ -193,18 +213,18 @@
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/img-proyecto-notas.jpg" alt="">
+                <img src="../img/img-proyecto-notas.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="proyectos/NOTAS/index.php" target="_blank">Proyecto de notas</a></h4>
+                    <h4> <a href="../proyectos/NOTAS/index.php" target="_blank">Proyecto de notas</a></h4>
                     <p>PHP-POO</p>
                 </div>
             </div>
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/img-proyecto-ecommerce.jpg" alt="">
+                <img src="../img/img-proyecto-ecommerce.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="proyectos/TIENDA/index.php" target="_blank">Ecommerce</a></h4>
+                    <h4> <a href="../proyectos/TIENDA/index.php" target="_blank">Ecommerce</a></h4>
                     <p>PHP-POO-MVC</p>
                 </div>
             </div>
@@ -221,16 +241,16 @@
         <div class="fila">
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/img-proyecto-registroalumno.jpg" alt="">
+                <img src="../img/img-proyecto-registroalumno.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="proyectos/REFUERZOPOOMVC/index.php" target="_blank">Registro de alumnos</a></h4>
+                    <h4> <a href="../proyectos/REFUERZOPOOMVC/index.php" target="_blank">Registro de alumnos</a></h4>
                     <p>PHP-POO-MVC</p>
                 </div>
             </div>
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/trabajo-en-proceso.jpg" alt="">
+                <img src="../img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
                     <h4>MIGRANDO PROYECTO DE LARAVEL</h4>
                     <p>Simulacion de un instagram</p>
@@ -249,7 +269,7 @@
         <div class="fila">
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/trabajo-en-proceso.jpg" alt="">
+                <img src="../img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
                     <h4>JAVASCRIPT</h4>
                     <p>E-Commerce</p>
@@ -258,9 +278,9 @@
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="img/img-proyecto-blackjack.jpg" alt="">
+                <img src="../img/img-proyecto-blackjack.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="proyectos/BLACKJACK/index.html" target="_blank">Juego de Blackjack</a></h4>
+                    <h4> <a href="../proyectos/BLACKJACK/index.html" target="_blank">Juego de Blackjack</a></h4>
                     <p>JAVASCRIPT</p>
                 </div>
             </div>
@@ -280,7 +300,7 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactanos ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="./main.php" method="POST">
                 <div class="fila mitad">
                     <input name="nombre" type="text" placeholder="Nombre completo" class="input-mitad">
                     <input name="email" type="email" placeholder="Direccion de email" class="input-mitad">
