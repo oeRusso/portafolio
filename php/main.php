@@ -213,18 +213,18 @@
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/img-proyecto-notas.jpg" alt="">
+                <img src="img/img-proyecto-notas.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="../proyectos/NOTAS/index.php" target="_blank">Proyecto de notas</a></h4>
+                    <h4> <a href="proyectos/NOTAS/index.php" target="_blank">Proyecto de notas</a></h4>
                     <p>PHP-POO</p>
                 </div>
             </div>
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/img-proyecto-ecommerce.jpg" alt="">
+                <img src="img/img-proyecto-ecommerce.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="../proyectos/TIENDA/index.php" target="_blank">Ecommerce</a></h4>
+                    <h4> <a href="proyectos/TIENDA/index.php" target="_blank">Ecommerce</a></h4>
                     <p>PHP-POO-MVC</p>
                 </div>
             </div>
@@ -241,16 +241,16 @@
         <div class="fila">
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/img-proyecto-registroalumno.jpg" alt="">
+                <img src="img/img-proyecto-registroalumno.jpg" alt="">
                 <div class="info">
-                    <h4> <a href="../proyectos/REFUERZOPOOMVC/index.php" target="_blank">Registro de alumnos</a></h4>
+                    <h4> <a href="proyectos/REFUERZOPOOMVC/index.php" target="_blank">Registro de alumnos</a></h4>
                     <p>PHP-POO-MVC</p>
                 </div>
             </div>
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/trabajo-en-proceso.jpg" alt="">
+                <img src="img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
                     <h4>MIGRANDO PROYECTO DE LARAVEL</h4>
                     <p>Simulacion de un instagram</p>
@@ -269,7 +269,7 @@
         <div class="fila">
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/trabajo-en-proceso.jpg" alt="">
+                <img src="img/trabajo-en-proceso.jpg" alt="">
                 <div class="info">
                     <h4>JAVASCRIPT</h4>
                     <p>E-Commerce</p>
@@ -278,7 +278,7 @@
 
             <div class="proyectos">
                 <div class="overlay"></div>
-                <img src="../img/img-proyecto-blackjack.jpg" alt="">
+                <img src="img/img-proyecto-blackjack.jpg" alt="">
                 <div class="info">
                     <h4> <a href="../proyectos/BLACKJACK/index.html" target="_blank">Juego de Blackjack</a></h4>
                     <p>JAVASCRIPT</p>
