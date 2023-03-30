@@ -298,7 +298,7 @@
  }
 
  .contenedor-skills .skills{
-   max-width: 600px;
+   max-width: 195px;
    margin: 30px auto;
  }
 
@@ -315,12 +315,12 @@
   background-color: #fff;
  }
 
- .contenedor-skills .skills .barra{
+ /* .contenedor-skills .skills .barra{
   background-color: #919191;
   width: 100%;
   height: 6px;
   margin: 10px 0;
- }
+ } */
 
  /* Este estilo se aplicara luego mediante javascript */
  .contenedor-skills .skills .barra .barra-progreso1{
@@ -451,7 +451,7 @@
 }
 
 #portafolio .fila .proyectos:hover img{
-
+  cursor: pointer;
   filter: grayscale(0);
 }
 
@@ -668,6 +668,35 @@ footer a{
     
   }
 
+}
+
+
+
+.delete{
+  margin-top: 15px;
+  margin-left: 10.5rem;
+  margin-bottom: 5px;
+  
+}
+
+.delete a{
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: .5rem;
+  padding: 10px;
+  background-color: red;
+  border: none;
+  color:white;
+  font-weight: bold;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
+.delete a:hover{
+  background-color: #22224e;
 }
 
 
